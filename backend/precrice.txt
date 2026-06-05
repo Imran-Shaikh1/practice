@@ -1,0 +1,55 @@
+// GET    = SERVER SE DATA FRONTEND PE DIKHANA REHTA HAI JAB 
+// POST   = FRONTEND SE DATA SERVER PE STORE OR SEND KARNAN REHTA HAI TAB
+// PATCH  = DATA ALREADY PRESENT REHTA HAI USMAI KUCH UPDATE KARNA REHTA HAI TAB YEH API USE KARTE HAI 
+// DELETE = DATA KO DELETE KARNE KE LIYE USE KARTE HAI
+// YEH SAARE API REST API KE PART HAI 
+
+
+
+T7sAnPf7icTQaPxl
+
+data base mai 4 operation hoote hai CURD 
+C = create 
+U = update 
+R = read 
+D = delete 
+T7sAnPf7icTQaPxl
+mongodb+srv://imran:T7sAnPf7icTQaPxl@cluster0.ufbp8wm.mongodb.net/
+
+
+
+create = POST
+read = GET
+update = PATCH
+delete = DELETE
+
+"private_T0QIrViSfd+S3zaolMgiW4eGvT4="   
+
+
+
+
+
+
+
+
+
+
+
+const { ImageKit } = require("@imagekit/nodejs");
+
+const imagekit = new ImageKit({
+    privateKey: "private_T0QIrViSfd+S3zaolMgiW4eGvT4="   
+
+});
+
+async function uploadfile(buffer) {
+
+    const result = await imagekit.files.upload({
+        file: buffer.toString("base64"),
+        fileName: "image.jpg"
+    });
+
+    return result;
+}
+
+module.exports = uploadfile;
