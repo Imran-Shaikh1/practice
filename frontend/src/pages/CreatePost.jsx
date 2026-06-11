@@ -8,7 +8,7 @@ const CreatePost = () => {
 
         const formData = new FormData(e.target)
 
-        axios.post('http://localhost:3000/create', formData, )
+        axios.post('https://practice-hjlz.onrender.com/create', formData, )
          .then((res) => {
             
             console.log(res)

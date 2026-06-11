@@ -12,7 +12,7 @@ const Feed = () => {
 
 
   useEffect(() =>  {
-    axios.get('http://localhost:3000/feed')
+    axios.get('https://practice-hjlz.onrender.com/feed')
         .then((res) => {
             setPosts(res.data.posts)
         })
