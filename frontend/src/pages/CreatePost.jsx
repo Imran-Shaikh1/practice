@@ -20,15 +20,15 @@ const CreatePost = () => {
     }
 
     return (
-        <section>
-            <h1>Create Post</h1>
-            <form onSubmit={handleSubmit}>
-                <input type="file" name="image" accept="image/*" required />
-                <input type="text" name="caption" placeholder="Enter caption" required />
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    )
+    <section className='create-post-section'>
+        <h1>Create Post</h1>
+        <form onSubmit={handleSubmit}>
+            <input type="file" name="image" accept="image/*" required />
+            <input type="text" name="caption" placeholder="Enter caption" required />
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+)
 }
 
 export default CreatePost

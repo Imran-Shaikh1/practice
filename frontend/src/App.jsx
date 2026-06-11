@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import CreatePost from './pages/CreatePost.jsx'
 import Feed from './pages/Feed.jsx'
+import './App.css' 
 
 const App = () => {
   return (
